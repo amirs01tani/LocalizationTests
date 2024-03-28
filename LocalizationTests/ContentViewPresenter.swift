@@ -10,6 +10,6 @@ import Foundation
 class ContentViewPresenter {
     
     var title: String {
-        "first.page.greating"
+        Localized.MainPage.greating
     }
 }

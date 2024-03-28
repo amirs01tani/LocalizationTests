@@ -12,12 +12,12 @@ public final class Localized {
 
 public extension Localized {
     enum Keys: String, CaseIterable {
-        case greating = "acceptor.map.list"
+        case greating = "first.page.greating"
         
     }
     
-    enum AcceptorMap {
-		static var table: String { "Localized" }
+    enum MainPage {
+		static var table: String { "Localizable" }
 
         static var greating: String {
             NSLocalizedString(
