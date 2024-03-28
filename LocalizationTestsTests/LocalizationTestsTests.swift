@@ -18,15 +18,15 @@ final class LocalizationTestsTests: XCTestCase {
         let localizedStringKeys = getAllLocalizationKeys()
         
         localizationBundles.forEach { (bundle, localization) in
+            let language = Locale.current.localizedString(forLanguageCode: localization) ?? ""
             localizedStringKeys.forEach { key in
                 let localizedString = bundle.localizedString(forKey: key, value: nil, table: table)
                 
                 if localizedString == key {
-                    let language = Locale.current.localizedString(forLanguageCode: localization) ?? ""
                     
                     XCTFail("Missing \(language) (\(localization)) localized string for key: '\(key)' in table: '\(table)'")
                 } else if let key = Localized.Keys(rawValue: key) {
-                    XCTAssertEqual(localizedString, getValueForALocalizationKey(key: key))
+                    XCTAssertEqual(localizedString, getValueForALocalizationKey(key: key, language: language))
                 }
             }
         }
@@ -68,10 +68,14 @@ final class LocalizationTestsTests: XCTestCase {
         return Localized.Keys.allCases.map({$0.rawValue})
     }
     
-    func getValueForALocalizationKey(key: Localized.Keys) -> String {
-        switch key {
-        case .greating:
+    func getValueForALocalizationKey(key: Localized.Keys, language: String) -> String {
+        switch (key, language) {
+        case (.greating, "English"):
             return "Hello, World!"
+        case (.greating, "Georgian"):
+            return "Გამარჯობა მსოფლიო!"
+        default:
+            return "The \(key) key was not found in \(language) language"
         }
     }
 }
