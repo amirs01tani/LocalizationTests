@@ -25,13 +25,6 @@
 			remoteGlobalIDString = 299C4FBC2BB5475700CB6646;
 			remoteInfo = LocalizationTests;
 		};
-		299C4FD92BB5475800CB6646 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 299C4FB52BB5475700CB6646 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 299C4FBC2BB5475700CB6646;
-			remoteInfo = LocalizationTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +36,6 @@
 		299C4FC82BB5475800CB6646 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		299C4FCE2BB5475800CB6646 /* LocalizationTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizationTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		299C4FD22BB5475800CB6646 /* LocalizationTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTestsTests.swift; sourceTree = "<group>"; };
-		299C4FD82BB5475800CB6646 /* LocalizationTestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizationTestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		299C4FEB2BB5478C00CB6646 /* ContentViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewPresenter.swift; sourceTree = "<group>"; };
 		299C4FF02BB5484700CB6646 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		299C4FF22BB548CC00CB6646 /* Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
@@ -58,13 +50,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		299C4FCB2BB5475800CB6646 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		299C4FD52BB5475800CB6646 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -88,7 +73,6 @@
 			children = (
 				299C4FBD2BB5475700CB6646 /* LocalizationTests.app */,
 				299C4FCE2BB5475800CB6646 /* LocalizationTestsTests.xctest */,
-				299C4FD82BB5475800CB6646 /* LocalizationTestsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,24 +146,6 @@
 			productReference = 299C4FCE2BB5475800CB6646 /* LocalizationTestsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		299C4FD72BB5475800CB6646 /* LocalizationTestsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 299C4FE82BB5475800CB6646 /* Build configuration list for PBXNativeTarget "LocalizationTestsUITests" */;
-			buildPhases = (
-				299C4FD42BB5475800CB6646 /* Sources */,
-				299C4FD52BB5475800CB6646 /* Frameworks */,
-				299C4FD62BB5475800CB6646 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				299C4FDA2BB5475800CB6646 /* PBXTargetDependency */,
-			);
-			name = LocalizationTestsUITests;
-			productName = LocalizationTestsUITests;
-			productReference = 299C4FD82BB5475800CB6646 /* LocalizationTestsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,10 +160,6 @@
 						CreatedOnToolsVersion = 15.0.1;
 					};
 					299C4FCD2BB5475800CB6646 = {
-						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = 299C4FBC2BB5475700CB6646;
-					};
-					299C4FD72BB5475800CB6646 = {
 						CreatedOnToolsVersion = 15.0.1;
 						TestTargetID = 299C4FBC2BB5475700CB6646;
 					};
@@ -217,7 +179,6 @@
 			targets = (
 				299C4FBC2BB5475700CB6646 /* LocalizationTests */,
 				299C4FCD2BB5475800CB6646 /* LocalizationTestsTests */,
-				299C4FD72BB5475800CB6646 /* LocalizationTestsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,13 +195,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		299C4FCC2BB5475800CB6646 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		299C4FD62BB5475800CB6646 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,13 +223,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		299C4FD42BB5475800CB6646 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -283,11 +230,6 @@
 			isa = PBXTargetDependency;
 			target = 299C4FBC2BB5475700CB6646 /* LocalizationTests */;
 			targetProxy = 299C4FCF2BB5475800CB6646 /* PBXContainerItemProxy */;
-		};
-		299C4FDA2BB5475800CB6646 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 299C4FBC2BB5475700CB6646 /* LocalizationTests */;
-			targetProxy = 299C4FD92BB5475800CB6646 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -539,50 +481,6 @@
 			};
 			name = Release;
 		};
-		299C4FE92BB5475800CB6646 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = E78623RKW6;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amirs01tani.LocalizationTestsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LocalizationTests;
-			};
-			name = Debug;
-		};
-		299C4FEA2BB5475800CB6646 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = E78623RKW6;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amirs01tani.LocalizationTestsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LocalizationTests;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -609,15 +507,6 @@
 			buildConfigurations = (
 				299C4FE62BB5475800CB6646 /* Debug */,
 				299C4FE72BB5475800CB6646 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		299C4FE82BB5475800CB6646 /* Build configuration list for PBXNativeTarget "LocalizationTestsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				299C4FE92BB5475800CB6646 /* Debug */,
-				299C4FEA2BB5475800CB6646 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
